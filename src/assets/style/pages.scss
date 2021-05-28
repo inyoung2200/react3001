@@ -1,0 +1,232 @@
+//메인페이지
+#mainCont {
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main_cont {
+        color: #fff;
+        font-size: 10vw;
+        font-family: 'Saol Display Regular';
+        text-transform: uppercase;
+        line-height: 0.85;
+    }
+}
+
+//about
+#aboutCont {
+    background-color: #f0eeeb;
+  }
+  .about-cont .about {
+    padding-bottom: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about-cont .about:nth-child(1) .about-img {
+    flex: 0 0 100%;
+  }
+  .about-cont .about:nth-child(1) .about-txt {
+    flex: 0 0 100%;
+  }
+  .about-cont .about:nth-child(1) .about-txt h2 {
+    margin-top: 2em;
+  }
+  .about-cont .about:nth-child(2) .about-img {
+    flex: 0 0 64%;
+  }
+  .about-cont .about:nth-child(2) .about-txt {
+    flex: 0 0 30%;
+  }
+  .about-cont .about:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+  .about-cont .about:nth-child(3) .about-img {
+    flex: 0 0 54%;
+  }
+  .about-cont .about:nth-child(3) .about-txt {
+    flex: 0 0 40%;
+  }
+  .about-cont .about .about-txt {
+    font-family: "Chosunilbo_myungjo";
+  }
+  .about-cont .about .about-txt h2 {
+    margin: 0 0 1em;
+    font-size: 1.625rem;
+  }
+  .about-cont .about .about-txt p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  // script
+  #scriptwrap {
+    background: #f0eeeb;
+  }
+  
+  .js-box {
+    font-family: "Chosunilbo_myungjo";
+    color: #030406;
+    padding-bottom: 140px;
+  }
+  
+  .js-box .js__motherbox .js__img.active {
+    display: block;
+  }
+  
+  .js-box .js__motherbox .js__img.active img {
+    display: block;
+  }
+  
+  .js-box .js__motherbox .js__img {
+    display: none;
+    overflow: hidden;
+    height: 25vw;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+  }
+  
+  .js-box h2 {
+    margin: 40px 0 16px 0;
+    font-size: 30px;
+    font-weight: normal;
+  }
+  
+  .js-box .js__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+  }
+  
+  .js-box .js__desc .js_descText {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 75%;
+    flex: 1 1 75%;
+    overflow: hidden;
+  }
+  
+  .js-box .js__desc .js_descText .motherbox.active {
+    display: block;
+  }
+  
+  .js-box .js__desc .js_descText .motherbox {
+    display: none;
+  }
+  
+  .js-box .js__desc .js_descText .motherbox div {
+    width: 45%;
+    float: left;
+  }
+  
+  .js-box .js__desc .js_descText .motherbox div:nth-child(1) {
+    margin-right: 40px;
+  }
+  
+  .js-box .js_menu {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+  }
+  
+  .js-box .js_menu li {
+    font-size: 18px;
+    display: inline;
+    list-style: none;
+  }
+  
+  .js-box .js_menu li a {
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #9b9b9b;
+    margin-right: 5px;
+  }
+  
+  .js-box .js_menu li a:nth-child(1),
+  .js-box .js_menu li a:nth-child(2),
+  .js-box .js_menu li a:nth-child(3),
+  .js-box .js_menu li a:nth-child(4),
+  .js-box .js_menu li a:nth-child(5) {
+    margin-bottom: 18px;
+  }
+  
+  .js-box .js_menu li a:nth-child(5n) {
+    margin-right: 0;
+  }
+  
+  .js-box .js_menu li a.active {
+    border: 1px dashed #9b9b9b;
+  }
+  
+
+// Reference
+/* referCont */
+#referCont {
+    background-color: #f0eeeb;
+}
+.refer-cont {
+    padding-bottom: 200px;
+}
+.refer-cont .refer-title li {
+    display: inline;
+    font-family: 'Rajdhani';
+}
+.refer-cont .refer-title li a {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin-right: 10px;
+}
+.refer-cont .refer-title li.active a {
+    background: #000;
+    color: #fff;
+}
+.refer-cont .refer-table {
+    border-bottom: 2px solid #000;
+    margin-top: 1.2rem;
+}
+.refer-cont .refer-table h3 {
+    font-size: 1.8rem;
+    font-family: 'Rajdhani';
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+}
+.refer-cont .refer-table li {
+    margin: 0;
+    list-style: none;
+    border-top: 1px solid #000;
+    position: relative;
+    transition: all 0.3s;
+}
+.refer-cont .refer-table li:hover {
+    background: rgba(0, 0, 0, 0.081);
+}
+.refer-cont .refer-table li span {
+    display: inline-block;
+    padding: 25px 10px;
+    font-size: 16px;
+    font-family: 'S-CoreDream-3Light';
+    box-sizing: border-box;
+}
+.refer-cont .refer-table li span.alpha {
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.refer-cont .refer-table li span.attr {
+    padding-left: 10%;
+    width: 35%;
+}
+.refer-cont .refer-table li span.desc {
+    width: 64.5%;
+}

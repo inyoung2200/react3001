@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Main from './components/pages/Main';
+import About from './components/pages/About';
+import Reference from './components/pages/Reference';
+import Youtube from './components/pages/Youtube';
+import Script from './components/pages/Script';
+import Portfolio from './components/pages/Portfolio';
+import Contact from './components/pages/Contact';
+import Header from './components/Header';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Route path="/" exact component={Main}></Route>
+            <Route path="/About" exact component={About}></Route>
+            <Route path="/Reference" exact component={Reference}></Route>
+            <Route path="/Youtube" exact component={Youtube}></Route>
+            <Route path="/Script" exact component={Script}></Route>
+            <Route path="/Portfolio" exact component={Portfolio}></Route>
+            <Route path="/Contact" exact component={Contact}></Route>
+        </Router>
+    )
 }
 
 export default App;
